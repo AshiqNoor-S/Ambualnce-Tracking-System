@@ -10,7 +10,8 @@ html {
 }
 
 body{
-    background: linear-gradient(-56deg, rgb(67, 0, 0), #4044af, #5215ec, #0306cd) !important;
+    /* background: linear-gradient(-56deg, rgb(67, 0, 0), #4044af, #5215ec, #0306cd) !important; */
+    background-color: #eaeaea;
 	animation: gradient 5s ease infinite;
 }
 

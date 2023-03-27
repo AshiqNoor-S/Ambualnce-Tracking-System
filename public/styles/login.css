@@ -1,7 +1,7 @@
 
 
 .login-form{
-    background: #9ac2ff;
+    background: #00bfff;
     width: 20%;
     height: 25rem;
     position: relative;
@@ -15,7 +15,7 @@
 
 .login-form span{
     font-weight: bold;
-    color: #4427ac;
+    color: #ffffff;
     cursor: pointer;
     width: 100px;
     display: inline-block;
