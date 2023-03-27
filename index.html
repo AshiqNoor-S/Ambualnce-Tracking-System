@@ -8,10 +8,19 @@
         #mapid {
         height: 400px;
         }
+        
+      #sample {
+        background-color: red;
+        width: 300px;
+        height: 300px;
+      }
     </style>
     </head>
         <body>
-        <div id="mapid"></div>
+            <h1>Communicating from an Arduino to Node.js</h1>
+            <div id="sample"></div>
+
+        <!-- <div id="mapid"></div> -->
 
         <script>
             var latitude = 12.8406;
@@ -22,6 +31,20 @@
         </script>
 
         <script src="index.js"></script>
+
+        
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js'></script>
+
+        <script>
+
+        var socket = io();
+
+        socket.on('data', function(data) {
+            console.log(data);
+            document.getElementById('sample').style.opacity = data+"%"; 
+        });
+
+        </script>
 
     </body>
 </html>
