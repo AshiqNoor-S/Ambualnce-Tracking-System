@@ -1,0 +1,34 @@
+#about-us {
+    clear: left;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    opacity: 0;
+}
+
+.column {
+    width: 20%;
+    height: 250px;
+    border-radius: 100%;
+    display: block;
+    margin: auto;
+}
+
+.row {
+    padding-top:3%; 
+    text-align: center;
+}
+
+.name-column {
+    width: 20%;
+    display: block;
+    margin: auto;
+    padding-bottom: 2%;
+}
+
+#about-us h1 {
+    padding-top: 1%;
+}
+
+#about-us p {
+    font-size: 1.2rem;
+}
