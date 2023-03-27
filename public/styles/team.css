@@ -1,13 +1,17 @@
-#about-us {
-    clear: left;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    opacity: 0;
+#team{
+    margin-left:4.8%;
+    margin-right:4.8%;
+}
+.heading{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 1%;
 }
 
 .column {
-    width: 20%;
-    height: 250px;
+    width: 15%;
+    height: 15%;
     border-radius: 100%;
     display: block;
     margin: auto;
