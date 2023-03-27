@@ -16,8 +16,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/styles/navbar.css">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/features.css">
 
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,18 +36,8 @@
 </head>
 <body onload="typeWriter();">
     <%- include('navbar'); -%>
-
-    <div class="content container hero">
-        <h1 class="title"> <span class="highlight">Seconds matter in saving lives</span> <br>We ar here to make every second count</h1>
-        <p class="subtitle">Iniative by Team T - 7 2 9</p>
-        <p id="main1"></p>
-        <p id="main2"></p>
-        <p id="main3"></p>
-      </div>
-      <img src="./img.png" alt="" class="feature">
-    </div>
-
-
+    <%- include('hero'); -%>
+    <%- include('features'); -%>
     <script type="text/javascript">
         $crisp=[];
         $crisp.push(["set", "user:nickname", ["visitor_nickname"]]);

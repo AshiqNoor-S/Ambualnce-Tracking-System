@@ -16,7 +16,7 @@ body{
 
 .hero{
 width:100%;
-min-height: 100vh;
+min-height: 70vh;
 padding: 10px 10%;
 overflow: hidden;
 position: relative;
@@ -35,6 +35,22 @@ position: relative;
     border: 0.2rem solid #fff;
     border-radius: 2rem;
     padding: 1.0em;
+}
+
+
+#main1:hover{
+    background-color: grey;
+    border: 0.2rem solid black;
+}
+
+#main2:hover{
+    background-color: grey;
+    border: 0.2rem solid black;
+}
+
+#main3:hover{
+    background-color: grey;
+    border: 0.2rem solid black;
 }
 
 .content{
