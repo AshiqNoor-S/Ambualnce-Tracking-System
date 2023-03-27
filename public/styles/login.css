@@ -26,7 +26,7 @@
 }
 
 .login-form form{
-    max-width: 100%;
+    max-width: 40vh;
     padding: 0 20px;
     position: absolute;
     top: 5rem;
@@ -34,7 +34,7 @@
 }
 
 form input{
-    width: 100%;
+    width: 30vh;
     height: 30px;
     margin: 10px 0;
     padding: 0 10px;
@@ -64,7 +64,7 @@ form .btn:focus{
 }
 
 #regForm{
-    left: 18.7rem;
+    left: 17.56vw;
     width: 100%;
 }
 
