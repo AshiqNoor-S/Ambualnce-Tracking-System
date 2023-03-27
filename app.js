@@ -1,42 +1,24 @@
-var http = require('http');
-var fs = require('fs');
-var index = fs.readFileSync( 'index.html');
+const express = require("express");
+const bodyParser = require("body-parser");
+const ejs = require("ejs");
 
-var SerialPort = require('serialport');
-const parsers = SerialPort.parsers;
+const app = express();
 
-const parser = new parsers.Readline({
-  delimiter: '\r\n'
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(express.static("public"));
+app.set('view engine', 'ejs');
+
+
+// ----------------------------------
+// GET and POST requests
+
+app.get("/", function(req, res){
+    res.render('home');
 });
 
-var port = new SerialPort('/dev/tty.wchusbserialfa1410',{ 
-  baudRate: 9600,
-  dataBits: 8,
-  parity: 'none',
-  stopBits: 1,
-  flowControl: false
+
+
+// ----------------------------------
+app.listen(3000, function(){
+    console.log("Server running on port 3000...");
 });
-
-port.pipe(parser);
-
-var app = http.createServer(function(req, res) {
-  res.writeHead(200, {'Content-Type': 'text/html'});
-  res.end(index);
-});
-
-var io = require('socket.io').listen(app);
-
-io.on('connection', function(socket) {
-    
-  console.log('Node is listening to port');
-    
-});
-
-parser.on('data', function(data) {
-    
-  console.log('Received data from port: ' + data);
-  io.emit('data', data);
-    
-});
-
-app.listen(3000);
