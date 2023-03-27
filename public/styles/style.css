@@ -16,7 +16,7 @@ body{
 }
 
 .hero{
-    margin-left:2%;
+    margin-left:0.2%;
     margin-right:2%;
     width:100%;
     min-height: 70vh;
@@ -28,29 +28,30 @@ body{
 .feature{
     width:530px;
     position:absolute;
-    bottom:15%;
-    right:8%;
+    bottom:2vw;
+    right:1vw;
 }
 
 #main1,#main2,#main3{
+    font-size: 20px;
     margin-top:auto;
     color:rgb(49, 46, 238);
 }
 
 
 #main1:hover{
-    background-color: grey;
-    border: 0.2rem solid black;
+    font-size: 25px;
+    transition: 0.4s;
 }
 
 #main2:hover{
-    background-color: grey;
-    border: 0.2rem solid black;
+    font-size: 25px;
+    transition: 0.4s;
 }
 
 #main3:hover{
-    background-color: grey;
-    border: 0.2rem solid black;
+    font-size: 25px;
+    transition: 0.4s;
 }
 
 .content{
@@ -60,15 +61,17 @@ body{
 }
 
 .subtitle{
-    font-size: 20px;
+    font-size: 1.5rem;
     color: rgb(49, 46, 238);
 }
 
 .highlight{
+    font-size: 2.6rem;
     color:red;
 }
 
 .title{
+    font-size: 2.6rem;
     color:rgb(49, 46, 238);
     margin-bottom: 5%;
 }

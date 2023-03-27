@@ -1,7 +1,7 @@
 var i = 0, j = 0, k=0;
 var txt = '24 hours Ambulance Tracking';
 var txt2 = 'Doctor Consultancy incase of emergency';
-var txt3 = 'Health Tips'
+var txt3 = 'Health Tips & Live Chat'
 var speed = 250;
 
 function typeWriter1() {
