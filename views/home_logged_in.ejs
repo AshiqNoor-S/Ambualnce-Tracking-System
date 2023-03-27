@@ -6,18 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HealthX</title>
 
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/styles/navbar.css">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/features.css">
+    <link rel="stylesheet" href="/styles/team.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/8c4e0c6018.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">window.$crisp=[];
+        window.CRISP_WEBSITE_ID="3b333d61-dba4-47fd-8b93-c0d45e7e0bdf";
+        (function()
+        {d=document;
+        s=d.createElement("script");
+        s.src="https://client.crisp.chat/l.js";
+        s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+    </script>
+
 </head>
-<body>
-    <%- include('navbar'); %>
-    <div style="padding-top: 100px; margin-left: 20px;"></div>
-    <h1>Logged In</h1>
+<body onload="typeWriter();">
+    <%- include('navbar'); -%>
+    <%- include('hero'); -%>
+    <%- include('features'); -%>
+    <%- include('team'); -%>
+    <%- include('footer'); -%>
+    <script type="text/javascript">
+        $crisp=[];
+        $crisp.push(["set", "user:nickname", ["visitor_nickname"]]);
+        $crisp.push(["set", "session:data", [["custom_key", "custom_value"]]]);
+        $crisp.push(["set", "session:event", ["trigger", "chat_opened"]]);
+    </script>
+
+    <script src="script.js"></script>
+    
 </body>
 </html>
