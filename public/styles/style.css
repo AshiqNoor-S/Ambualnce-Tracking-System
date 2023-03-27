@@ -1,3 +1,59 @@
-* {
+*{
     font-family: 'Lora', serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(-56deg, rgb(67, 0, 0), #4044af, #5215ec, #0306cd) !important;
+	animation: gradient 5s ease infinite;
+}
+
+.hero{
+width:100%;
+min-height: 100vh;
+padding: 10px 10%;
+overflow: hidden;
+position: relative;
+}
+
+.feature{
+    width:530px;
+    position:absolute;
+    bottom:15%;
+    right:8%;
+}
+
+#main1,#main2,#main3{
+    margin-top:2%;
+    color:white;
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 1.0em;
+}
+
+.content{
+    float: left;
+    margin-top: 15%;
+    /* max-width: 600px; */
+    text-align: center;
+}
+
+.subtitle{
+    font-size: 20px;
+    color: white;
+}
+
+.highlight{
+    color:red;
+}
+
+.title{
+    color:white;
+    margin-bottom: 5%;
 }
