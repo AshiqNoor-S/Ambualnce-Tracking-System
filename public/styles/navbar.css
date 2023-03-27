@@ -24,11 +24,11 @@
 
 .navbar {
     /* box-shadow: 0px 5px 10px 0px #aaa; */
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
-    background: linear-gradient(to right, 
-            #1f018d, #3586ff);
-    color: #000;
+    /* background: linear-gradient(to right, #1f018d, #3586ff); */
+    background-color: #00bfff;
+    color: #ffffff;
     z-index: 100;
 
     /* Added these 2 styles */
@@ -72,7 +72,7 @@
     list-style: none;
     margin-left: 1.5rem;
     font-size: 1.2rem;
-    color: white;
+    color: rgb(0, 0, 0);
     transition: all 0.3s ease-in-out;
 
     /* Added below styles */
@@ -102,7 +102,7 @@
 }
 
 .navbar a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
@@ -113,7 +113,7 @@
 }
 
 a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 

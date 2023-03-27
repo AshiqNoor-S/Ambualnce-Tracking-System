@@ -2,6 +2,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
+const bcrypt = require("bcrypt");
+const saltRounds = 10;
 
 const app = express();
 
@@ -36,27 +38,36 @@ app.post("/login", function(req, res){
     Doctor.findOne({eid: req.body.eid})
     .then(function(foundUser){
         if(foundUser){
-            if(foundUser.password === req.body.password)
-            {
-                res.render("home_logged_in");
-            }
+            bcrypt.compare(req.body.password, foundUser.password, function(err, result) {
+                if(result == true){
+                    res.render("home_logged_in");
+                    console.log("Logged In!");
+                    console.log(req.body.eid);
+                    console.log(req.body.password);
+                }
+            });
+
+            // if(foundUser.password === req.body.password)
+            // {
+            //     res.render("home_logged_in");
+            // }
         }
     })
     .catch(function(err){
         console.log(err);
     });
-
-    // res.render("home_logged_in");
+    
 });
 
 app.post("/register", function(req, res){
     console.log('Register: ' + req.body);
-    
-    const newUser = new Doctor({
+
+    bcrypt.hash(req.body.password, saltRounds, function(err, hash) {
+        const newUser = new Doctor({
             name: req.body.name, 
             email: req.body.email, 
             eid: req.body.eid,
-            password: req.body.password
+            password: hash
         });
     
         newUser.save()
@@ -66,6 +77,7 @@ app.post("/register", function(req, res){
         .catch(function(err){
             console.log(err);
         });
+    });
 });
 
 // ----------------------------------

@@ -10,7 +10,8 @@ html {
 }
 
 body{
-    background: linear-gradient(-56deg, rgb(67, 0, 0), #4044af, #5215ec, #0306cd) !important;
+    /* background: linear-gradient(-56deg, rgb(67, 0, 0), #4044af, #5215ec, #0306cd) !important; */
+    background-color: #eaeaea;
 	animation: gradient 5s ease infinite;
 }
 
@@ -31,7 +32,7 @@ position: relative;
 
 #main1,#main2,#main3{
     margin-top:2%;
-    color:white;
+    color:rgb(0, 0, 0);
     border: 0.2rem solid #fff;
     border-radius: 2rem;
     padding: 1.0em;
@@ -46,7 +47,7 @@ position: relative;
 
 .subtitle{
     font-size: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .highlight{
@@ -54,6 +55,6 @@ position: relative;
 }
 
 .title{
-    color:white;
+    color:rgb(0, 0, 0);
     margin-bottom: 5%;
 }
