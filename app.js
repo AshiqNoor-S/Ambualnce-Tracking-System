@@ -28,6 +28,10 @@ app.get("/", function(req, res){
     res.render('home');
 });
 
+app.get("/map", function(req, res){
+    res.render('map');
+});
+
 app.get("/home", function(req, res){
     res.render('home_logged_in');
 });
