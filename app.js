@@ -28,6 +28,10 @@ app.get("/", function(req, res){
     res.render('home');
 });
 
+app.get("/home", function(req, res){
+    res.render('home_logged_in');
+});
+
 app.get("/login", function(req, res){
     res.render('login');
 });
@@ -40,10 +44,10 @@ app.post("/login", function(req, res){
         if(foundUser){
             bcrypt.compare(req.body.password, foundUser.password, function(err, result) {
                 if(result == true){
-                    res.render("home_logged_in");
-                    console.log("Logged In!");
-                    console.log(req.body.eid);
-                    console.log(req.body.password);
+                    res.redirect("/home");
+                    // console.log("Logged In!");
+                    // console.log(req.body.eid);
+                    // console.log(req.body.password);
                 }
             });
 
