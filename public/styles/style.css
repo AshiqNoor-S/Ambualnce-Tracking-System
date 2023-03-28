@@ -75,3 +75,9 @@ body{
     color:rgb(49, 46, 238);
     margin-bottom: 5%;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .feature {
+        display: none;
+    }
+}
