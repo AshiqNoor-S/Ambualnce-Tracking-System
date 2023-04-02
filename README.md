@@ -1,6 +1,6 @@
 
 # LifeTrack
-The lifetrack Project allows hospitals to track the location of ambulances and vitals of patients in real-time. The project sends the location and vital information of the patient to the nearest hospital so that they can prepare to receive the patient and provide immediate medical assistance.
+The lifetrack Project allows hospitals to track the location of ambulances and vitals of patients in real-time. The project sends the location and vital information of the patient to the hospital so that they can prepare to receive the patient and provide immediate medical assistance.
 
 
 ## How It Works
